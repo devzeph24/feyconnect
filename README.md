@@ -14,6 +14,10 @@ A beautiful, modern UI component for integrating multiple financial brokers into
 - 🎭 Custom gradient borders
 - 💫 Sophisticated shadow layering
 
+## Connect
+
+- Follow me on [Twitter/X](https://x.com/zephyrlogs) for updates and web dev content
+
 ## Supported Brokers
 
 - Robinhood
@@ -110,7 +114,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- Design inspiration from modern glass-morphism UI trends
+- Design inspiration from [Dennis Brotzky's tweet](https://x.com/brotzky_/status/1892984381771337866)
 - Built with love for the open-source community
 
 ## Support
