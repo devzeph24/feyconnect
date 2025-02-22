@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Feyw - Modern Broker Integration UI
+
+A beautiful, modern UI component for integrating multiple financial brokers into your application. Built with Next.js 14, TypeScript, and Tailwind CSS.
+
+![Feyw UI](public/preview.png)
+
+## Features
+
+- 🎨 Modern glass-morphism design
+- 🔄 Smooth hover and click animations
+- 📱 Fully responsive
+- 🖼️ High-quality broker logo integration
+- 🌟 Beautiful backdrop blur effects
+- 🎭 Custom gradient borders
+- 💫 Sophisticated shadow layering
+
+## Supported Brokers
+
+- Robinhood
+- Charles Schwab
+- Fidelity
+- WealthSimple
+- Vanguard
+- WE
+- Coinbase
+- JPMorgan Chase
+
+## Tech Stack
+
+- [Next.js 14](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [next/image](https://nextjs.org/docs/api-reference/next/image) - Image optimization
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+```bash
+git clone https://github.com/devzeph24/feyconnect.git
+cd feyconnect
+```
 
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Add broker logos to the `public` directory:
+- robinhood.png
+- charleschwab.png
+- fidelity.png
+- wealthsimple.png
+- vanguard.png
+- we.png
+- coinbase.png
+- chase.png
+
+4. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Adding New Brokers
 
-## Learn More
+Add new brokers to the `brokers` array in `app/page.tsx`:
 
-To learn more about Next.js, take a look at the following resources:
+```typescript
+const brokers = [
+  { name: "New Broker", icon: "/newbroker.png" },
+  // ... existing brokers
+];
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Styling
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The component uses a combination of Tailwind CSS classes and custom styles:
 
-## Deploy on Vercel
+- Background opacity: Modify `bg-[rgba(105,105,105,0.03)]`
+- Blur effect: Adjust `backdrop-blur`
+- Shadow effects: Customize the `boxShadow` style object
+- Border gradient: Modify the gradient values in the border div
+- Logo spacing: Adjust `-space-x-4` class
+- Button padding: Modify `p-4` class
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+We welcome contributions! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Design inspiration from modern glass-morphism UI trends
+- Built with love for the open-source community
+
+## Support
+
+If you like this project, please give it a ⭐️!
+
+For issues and feature requests, please create an [issue](https://github.com/devzeph24/feyconnect/issues).

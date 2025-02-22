@@ -8,6 +8,7 @@ export default function Home() {
     { name: "WealthSimple", icon: "/wealthsimple.png" },
     { name: "Vanguard", icon: "/vanguard.png" },
     { name: "WE", icon: "/we.png" },
+    { name: "Coinbase", icon: "/coinbase.png" },
     { name: "Chase", icon: "/chase.png" },
   ];
 
@@ -25,9 +26,8 @@ export default function Home() {
           style={{ objectPosition: 'center 40%' }}
         />
       </div>
-      <div className="absolute inset-0 bg-black/40" />
       <button 
-        className="flex items-center gap-12 bg-[rgba(105,105,105,0.04)] backdrop-blur rounded-full p-4 cursor-pointer group relative z-10 transition-all duration-200 ease-out active:scale-95 hover:bg-white/[0.08]"
+        className="flex items-center gap-12 bg-[rgba(105,105,105,0.03)] backdrop-blur rounded-full p-4 cursor-pointer group relative z-10 transition-all duration-200 ease-out active:scale-95 hover:bg-white/[0.08]"
         style={{
           boxShadow: `0 78px 51px 0 rgba(0, 0, 0, 0.1),
             0 50px 30px 0 rgba(0, 0, 0, 0.07),
@@ -68,7 +68,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <span className="text-white text-[15px] font-semibold tracking-[-0.01em] px-8 py-3 bg-white/5 rounded-full transition-colors">
+        <span className="text-white text-[15px] font-semibold tracking-[-0.01em] px-8 py-3 bg-[rgba(105,105,105,0.5)] rounded-full transition-colors">
           Sync your broker
         </span>
       </button>
